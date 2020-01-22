@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:ar="http://argument.chuston.net/v0/argument"
+	targetNamespace="http://argument.chuston.net/v0/argument"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="subjectType">
+		<xs:annotation>
+			<xs:documentation>
+				<![CDATA[
+				A person, place, or thing with a discrete identity.
+				 ]]>
+			</xs:documentation>
+		</xs:annotation>
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="xs:string" name="subid"
+					use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="eventType">
+		<xs:annotation>
+			<xs:documentation>Represents an event in time. Intended to track
+				items against time.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent mixed="true">
+			<xs:extension base="xs:anyType">
+
+				<xs:attribute name="eventid" type="xs:string" use="required" />
+				<xs:attribute name="pit" type="xs:dateTime" use="required">
+					<xs:annotation>
+						<xs:documentation>A point in time to tie to a time line. Do I need
+							ranges?
+						</xs:documentation>
+					</xs:annotation>
+				</xs:attribute>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:element name="eventref">
+		<xs:complexType>
+			<xs:attribute name="eventid" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="question">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="xs:anyType">
+					<xs:attribute name="qid" type="xs:integer" use="optional" />
+					<xs:attribute name="answer" type="xs:integer" use="optional" />
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="note">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="xs:anyType">
+					<xs:attribute name="nid" type="xs:integer" use="optional" />
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="claimType">
+		<xs:sequence>
+			<xs:element ref="ar:subref" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation><xs:documentation>Used to tag a claim with topics</xs:documentation></xs:annotation>
+			</xs:element>
+			<xs:element ref="ar:note" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="assert" minOccurs="1">
+				<xs:complexType mixed="true">
+					<xs:complexContent>
+						<xs:extension base="xs:anyType"></xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="warrant" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="desc" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="xs:anyType" />
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element ref="ar:dataref"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="refutation" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="desc" minOccurs="0">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="xs:anyType" />
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						<xs:element ref="ar:claimref" />		
+					</xs:sequence>
+				</xs:complexType>							
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="claimid" type="xs:string"
+			use="required" />
+		<xs:attribute name="source" type="xs:string" use="optional" />
+	</xs:complexType>
+	
+	<xs:element name="claimref">
+		<xs:complexType>
+			<xs:attribute name="claimid" type="xs:string"
+				use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="dataType">
+		<xs:complexContent mixed="true">
+			<xs:extension base="xs:anyType">
+				<xs:attribute name="did" type="xs:string"
+					use="required" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="DataRefType">
+		<xs:attribute name="did" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:element name="dataref" type="ar:DataRefType" />
+
+	<xs:complexType name="subjectList">
+		<xs:sequence>
+			<xs:element name="subject" type="ar:subjectType"
+				minOccurs="0" maxOccurs="unbounded" />
+
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="eventList">
+		<xs:sequence>
+			<xs:element name="event" type="ar:eventType" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="dataList">
+		<xs:sequence>
+			<xs:element name="data" type="ar:dataType" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="claimList">
+		<xs:sequence>
+			<xs:element name="claim" type="ar:claimType" minOccurs="0"
+				maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="subref">
+		<xs:complexType>
+			<xs:attribute name="subid" type="xs:string"
+				use="required" />
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="argument">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="subjects" type="ar:subjectList"
+					minOccurs="1" maxOccurs="1" />
+				<xs:element name="events" type="ar:eventList"
+					minOccurs="1" maxOccurs="1" />
+				<xs:element name="datas" type="ar:dataList" minOccurs="1" />
+				<xs:element name="claims" type="ar:claimList"
+					minOccurs="1" />
+			</xs:sequence>
+			<xs:attribute name="argid" />
+			<xs:attribute name="title" />
+			<xs:attribute name="version" />
+		</xs:complexType>
+
+		<!-- keys and references -->
+		<xs:unique name="claim-key">
+			<xs:selector xpath=".//ar:claim" />
+			<xs:field xpath="@claimid" />
+		</xs:unique>
+		
+		<xs:unique name="subject-key">
+			<xs:selector xpath="./ar:subjects/ar:subject" />
+			<xs:field xpath="@subid"></xs:field>
+		</xs:unique>
+		
+		<xs:unique name="data-key">
+			<xs:selector xpath="./ar:datas/ar:data" />
+			<xs:field xpath="@did" />
+		</xs:unique>
+
+		<xs:unique name="event-key">
+			<xs:selector xpath="./ar:events/ar:event" />
+			<xs:field xpath="@eventid" />
+		</xs:unique>
+
+		<xs:keyref name="subject-fk" refer="ar:subject-key">
+			<xs:selector xpath=".//ar:subref" />
+			<xs:field xpath="@subid" />
+		</xs:keyref>
+		
+		<xs:keyref name="source-fk" refer="ar:event-key">
+			<xs:selector xpath=".//ar:claim" />
+			<xs:field xpath="@source"/>
+		</xs:keyref>
+
+		<xs:keyref name="event-fk" refer="ar:event-key">
+			<xs:selector xpath=".//ar:eventref" />
+			<xs:field xpath="@eventid"/>
+		</xs:keyref>
+
+		<xs:keyref name="data-fk" refer="ar:data-key">
+			<xs:selector xpath=".//ar:dataref" />
+			<xs:field xpath="@did" />
+		</xs:keyref>
+		
+		<xs:keyref name="claim-fk" refer="ar:claim-key">
+			<xs:selector xpath=".//ar:claimref" />
+			<xs:field xpath="@claimid" />
+		</xs:keyref>
+	</xs:element>
+
+</xs:schema>

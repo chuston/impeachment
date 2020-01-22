@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+table.claim,table.eventList,table.subjectList,table.dataList {
+	border: 1pt solid black;
+	width: 90%;
+	margin-left: 50pt;
+	margin-right: 20pt;
+	margin-top: 10pt;
+	margin-botton: 30pt;
+}
+
+table.eventList,table.subjectList tr {
+	border-color: 1pt solid gray;
+}
+
+table.claim .claimid {
+	font-size: x-small;
+	vertical-align: top;
+	width: 50px;
+}
+table.claim .warrant-cell-heading {
+	font-size: x-small;
+	vertical-align: top;
+	width: 50px;
+}
+
+table.subjectList .subjectID {
+	font-size: x-small;
+	vertical-align: top;
+	width: 75px;
+	
+}
+
+table.dataList .dataID {
+	font-size: x-small;
+	vertical-align: top;
+	width: 75px;
+	
+}
+
+table.subjectList .subjectDesc {
+	font-weight: bold;
+}
+
+.subjectData h3 {
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+	font-size: medium;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: underline;
+	
+}
+
+.question {
+	background-color: orange;
+}
+
+table.subjectList .subjectDataDesc {
+	padding-left:20pt;
+	margin-top: 5pt;
+	margin-bottom: 5pt;
+		
+}
+
+table.eventList .eventID {
+	font-size: x-small;
+	vertical-align: top;
+	width: 75px;
+	
+}
+
+table.eventList .eventDate {
+	font-size: small;
+	vertical-align: top;
+	width: 75px;
+}
+
+table.eventList .eventDesc {
+	vertical-align: top;
+	width: auto;
+}
+
+table.claim .assert .claim-warrant-list {
+	vertical-align: top;
+	text-align: left;
+	padding-left: 10pt;
+	padding-right: 15pt;
+}

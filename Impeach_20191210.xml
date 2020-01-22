@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="ImpeachStyle.xsl" title="WebPage" type="text/xsl"?>
+
+<ar:argument argid="impeachment" version="2019-12-10" title="Impeachment Review"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ar="http://argument.chuston.net/v0/argument"
+	xsi:schemaLocation="http://argument.chuston.net/v0/argument Toulminv0.xsd">
+	<ar:subjects>
+		<ar:subject subid="djt">Donald J. Trump</ar:subject>
+		<ar:subject subid="ltcvindman">Lt Col Vindman, NSC expert on Ukraine</ar:subject>
+		<ar:subject subid="vz">Volodymir Zelenski, President of Ukraine</ar:subject>
+		<ar:subject subid="cnn">CNN (news outlet)</ar:subject>
+		<ar:subject subid="rg">Rudy Guliani</ar:subject>
+		<ar:subject subid="dg">Daniel Goldman (House Intel Committee Staffer/Lawyer)</ar:subject>
+		<ar:subject subid="ur-aid">$391 million of Congressionally appropriated military aid</ar:subject>
+		<ar:subject subid="wh">White House Staff</ar:subject>
+		<ar:subject subid="wh-meeting">White House Oval Office meeting</ar:subject>
+		<ar:subject subid="vp">Vladimir Putin</ar:subject>
+		<ar:subject subid="ica">Impoundment Control Act of 1974</ar:subject>
+		<ar:subject subid="hic">House Intel Committee</ar:subject>
+		<ar:subject subid="jb">Joe Biden</ar:subject>
+		<ar:subject subid="burisma">Burisma</ar:subject>
+		<ar:subject subid="hb">Hunter Biden</ar:subject>
+		<ar:subject subid="intel-report">The Trump Ukraine Impeachment Inquiry Report</ar:subject>
+		<ar:subject subid="uei">Ukrainian Election Interference</ar:subject>
+		<ar:subject subid="ob">Obstruction</ar:subject>
+		<ar:subject subid="natsec">National Security</ar:subject>
+		<ar:subject subid="gs">Gordon Sondland</ar:subject>
+		<ar:subject subid="ay">Andrey Yerkmak</ar:subject>
+		<ar:subject subid="kv">Kurt Volker</ar:subject>
+		<ar:subject subid="crowdstrike">US company that did forensics on hacked DNC server.</ar:subject>
+		<ar:subject subid="biden_inv">Investigation in Hunter Biden's relationship with Burisma and Joe Bidens role in firing Shokin.</ar:subject>
+		<ar:subject subid="shokin">Viktor Shokin</ar:subject>
+		<ar:subject subid="interfere2016">Interference in 2016 election</ar:subject>
+		<ar:subject subid="fiona">Fiona Hill</ar:subject>
+		<ar:subject subid="mueller">Robert Mueller</ar:subject>
+		<ar:subject subid="mueller-rept">Mueller Report</ar:subject>
+		<ar:subject subid="bolton">John Bolton</ar:subject>
+		<ar:subject subid="d-holmes">David Holmes</ar:subject>
+	</ar:subjects>
+
+	<ar:events>
+		<ar:event eventid="2016elec" pit="2016-11-08T00:00:00-06:00">2016 U.S. election</ar:event>
+		<ar:event eventid="apr10call" pit="2019-04-10T00:00:00-06:00">April 10th call between <ar:subref subid="djt"/> and <ar:subref subid="vz"/></ar:event>
+		<ar:event eventid="jul25call" pit="2019-07-25T00:00:00-06:00">July 25th call between <ar:subref subid="djt"/> and <ar:subref subid="vz"/></ar:event>
+		<ar:event eventid="jul26kyiv-meetings" pit="2019-07-26T00:00:00-06:00">US Officials met with <ar:subref subid="vz"/> and other Ukrainian officials in Kyiv.</ar:event>
+		<ar:event eventid="jul26-gs-ay" pit="2019-07-26T00:00:00-06:00"><ar:subref subid="gs"/> has a private one-on-one meeting with <ar:subref subid="ay"/> at  <ar:subref subid="ay"/>'s office.</ar:event>
+		<ar:event eventid="jul26-gs-dh-lunch" pit="2019-07-26T00:00:00-06:00"><ar:subref subid="gs"/> takes <ar:subref subid="d-holmes"/> and two other Dept of State employees to lunch.</ar:event>
+		<ar:event eventid="sond_jul25" pit="2019-07-25T00:00:00-06:00"><ar:subref subid="djt"/> and <ar:subref subid="gs"/> talk by phone &quot;just prior&quot; to <ar:eventref eventid="jul25call"/></ar:event>
+		<ar:event eventid="volker-yermak-txt" pit="2019-07-25T08:36:00-06:00">July 25th text from <ar:subref subid="kv"/> to <ar:subref subid="ay"/> stating &quot;Heard from White House - assuming President Z convinces trump he will investivate / get to the bottom of what happened in 2016, we will nail down date for visit to Washington.&quot;</ar:event>
+		<ar:event eventid="20191209-dg-hjc" pit="2019-12-09T00:00:00-06:00"><ar:subref subid="dg"/> testimony to House Judiciary committee (https://www.c-span.org/video/?467123-1/hearing-evidence-impeachment-inquiry)</ar:event>
+		<ar:event eventid="20191119-ltcvinman" pit="2019-11-19T00:00:00-06:00"><ar:subref subid="ltcvindman"/> testifies to <ar:subref subid="hic"/></ar:event>
+		<ar:event eventid="20191119-hill-holmes" pit="2019-11-19T00:00:00-06:00"><ar:subref subid="fiona"/> and <ar:subref subid="d-holmes"/> testify to <ar:subref subid="hic"/></ar:event>
+		<ar:event eventid="20191120-gs-hit" pit="2019-11-20T00:00:00-06:00"><ar:subref subid="gs"/> testifies to <ar:subref subid="hic"/></ar:event>
+		<ar:event eventid="djt2016inaug" pit="2016-01-20T00:00:00-06:00">Inauguration of <ar:subref subid="djt"/> as 45th President of the United States</ar:event>
+		<ar:event eventid="vp-orban-20170202" pit="2017-02-02T00:00:00-06:00">Joint press conference with <ar:subref subid="vp"/> and Prime Minister Orban</ar:event>
+		<ar:event eventid="vp-npr-20191127" pit="2019-11-27T00:00:00-06:00"><ar:subref subid="vp"/> interview with NPR, &quot;The View from Moscow on the Trump Impeachment Inquiry&quot;</ar:event>
+	</ar:events>
+	
+	<ar:datas>
+		<ar:data did="100">On April 10?, 2019, <ar:subref subid="rg"/> appeared on <ar:subref subid="cnn"/> and claimed he was &quot;interfering in an investigation&quot;</ar:data>
+		<ar:data did="200">July 25th &quot;Memorandum of Telephone Conversation&quot; between <ar:subref subid="djt"/> and <ar:subref subid="vz"/>. (https://games-cdn.washingtonpost.com/notes/prod/default/documents/d2311f4f-a767-4ddc-868b-8bc9af8226c5/note/339b784b-719c-464f-9eda-85daede53092.pdf)</ar:data>
+		<ar:data did="300"><ar:subref subid="burisma"/> is a Ukrainian energy company widely suspected of corrupt acts. <ar:question>what acts? detail?</ar:question></ar:data>
+		<ar:data did="400"><ar:subref subid="gs"/> donated $1,000,000 to <ar:subref subid="djt"/>'s inauguration fund.</ar:data>
+		<ar:data did="410"><ar:subref subid="gs"/> was directed by <ar:subref subid="djt"/> himself to take on a leading role in Ukrainian issues.</ar:data>
+		<ar:data did="420"><ar:subref subid="gs"/> is the ambassador to the European Union</ar:data>
+		<ar:data did="500"><ar:subref subid="ay"/> is the top aid to <ar:subref subid="vz"/></ar:data>
+		<ar:data did="600"><ar:subref subid="gs"/> testified there was a quid-quo-pro during <ar:eventref eventid="20191120-gs-hit"/></ar:data>
+		<ar:data did="700">Report: Assessing Russian Activities and Intentions in the Recent US Elections (https://www.documentcloud.org/documents/3254239-Russia-Hacking-report.html)</ar:data>
+		<ar:data did="710"><ar:subref subid="mueller"/> testified that the Russian government interfered in the 2016 Presidential election in sweeping and systematic fashion.</ar:data>
+		<ar:data did="720"><ar:subref subid="mueller"/> indicted 12 Russian GRU members (http://cdn.cnn.com/cnn/2018/images/07/13/gru.indictment.pdf)</ar:data>
+		<ar:data did="800"><ar:subref subid="fiona"/> is an expert on Russia and <ar:subref subid="vp"/></ar:data>
+		<ar:data did="900">During <ar:eventref eventid="vp-orban-20170202"/>, <ar:subref subid="vp"/> said &quot;Second, as we all know, during the presidential campaign in the United States, the Ukrainian government adopted a unilateral position in favor of one candidate. … More than that, certain oligarchs, certainly with the approval of the political leadership, funded this candidate, or female candidate to be more precise.&quot;</ar:data>
+		<ar:data did="910">During <ar:eventref eventid="vp-npr-20191127"/><ar:subref subid="vp"/> said &quot;Thank god no one is accusing us anymore of interfering in the U.S. elections. Now they're accusing Ukraine.&quot;</ar:data>
+		<ar:data did="1000">Transcript of <ar:eventref eventid="jul25call"/></ar:data>
+		<ar:data did="1100">During <ar:eventref eventid="20191120-gs-hit"/>, <ar:subref subid="gs"/> testified &quot;Mr. Giuliani was expressing the desires of the President of the United States, and we knew these investigations were important to the President</ar:data>
+		<ar:data did="1200"><ar:subref subid="bolton"/> said <ar:subref subid="rg"/> is a &quot;hand grenade that is going to blow everybody up.&quot;</ar:data>
+		<ar:data did="1300">From <ar:dataref did="1000"/>, <ar:subref subid="vz"/> said &quot;I also wanted to thank you for your invitation to visit the United States, specifically Washington DC. On the other hand, I also want to ensure you that we will be very serious about the case and will work on the investigation.&quot;</ar:data>
+		<ar:data did="2010"><ar:subref subid="shokin"/> was the Prosecutor General of Ukraine from 2015-02-10 to 2016-02-16.</ar:data>
+		<ar:data did="2020"><ar:subref subid="shokin"/> was forced to resign when <ar:subref subid="jb"/>, then VP of US, threatened to withhold $1BB in aid.</ar:data>
+		<ar:data did="2030"><ar:subref subid="d-holmes"/> was a senior official at the US Embassy in Ukraine.</ar:data>
+		<ar:data did="2040">During <ar:eventref eventid="20191119-hill-holmes"/> (Page 23 of Transcript), <ar:subref subid="d-holmes"/> said &quot;It is important to understand that a White House visit was critical to <ar:subref subid="vz"/>. <ar:subref subid="vz"/> needed to show U.S. support at the highest levels in order to demonstrate to <ar:subref subid="vp"/> that he had U.S. backing as well as to advance his ambitious anti-corruption reform agenda at home.&quot; </ar:data>
+		<ar:data did="2050">
+			During <ar:eventref eventid="20191119-hill-holmes"/>, <ar:subref subid="d-holmes"/> recounts conversation between <ar:subref subid="gs"/> 
+			and <ar:subref subid="djt"/> at <ar:eventref eventid="jul26-gs-dh-lunch"/>:
+			&quot;I heard <ar:subref subid="gs"/> greet <ar:subref subid="djt"/> and explain he was calling from Kyiv. I heard President Trump then clarify
+			that Ambassador Sondland was in Ukraine. Ambassador Sondland replied, yes, he was in Ukraine, and went on to state that President Zelensky, quote,
+			&apos;Loves your ass.&apos; I then heard President Trump ask &apos;So he's going to do the investigation?&apos;
+			Ambassador Sondland replied that he si going to do it, adding that President Zelensky will do anything you ask him to do.&quot;
+		</ar:data>
+		<ar:data did="2060"></ar:data>
+	</ar:datas>
+	
+	<ar:claims>
+		<ar:claim claimid="100" source="20191209-dg-hjc">
+			<ar:note>time: 1:43:00</ar:note>
+			<ar:assert>In an effort starting no later than April, 2019 <ar:subref subid="djt"/> extorted <ar:subref subid="vz"/> for personal and political benefit.
+				<ar:question>Is there evidence this effort started in 2018 with Nunes and Poroshenko?</ar:question>
+			</ar:assert>
+			<ar:warrant>
+				<ar:desc><ar:subref subid="rg"/> is the personal lawyer of <ar:subref subid="djt"/></ar:desc>
+				<ar:dataref did="100"/>
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="200" source="20191209-dg-hjc">
+			<ar:note>time: 1:43:14</ar:note>
+			<ar:note>time: 1:51:29</ar:note>
+			<ar:assert><ar:subref subid="djt"/> directed a months long campaign to solicit foreign help in his 2020 re-election efforts withholding official acts from the government of Ukraine in order to coerce and secure political assistance and interference in our domestic affairs.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="300" source="20191209-dg-hjc">
+			<ar:assert><ar:subref subid="djt"/> applied increasing pressure on <ar:subref subid="vz"/> to publicly announce an investigation into Ukraine interference in 2016 election and into Burisma/Hunter Biden.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="310" source="20191209-dg-hjc">
+			<ar:note>time: 1:52:30</ar:note>
+			<ar:assert><ar:subref subid="gs"/> relayed <ar:subref subid="djt"/>'s (message) <ar:question>what message?</ar:question> through <ar:subref subid="kv"/> who'd had lunch earlier that day <ar:question>what day?</ar:question> with <ar:subref subid="vz"/>'s top aid <ar:subref subid="ay"/></ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="320" source="20191209-dg-hjc">
+			<ar:note>time: 1:52:44</ar:note>
+			<ar:assert><ar:subref subid="kv"/> text's <ar:subref subid="ay"/> the message &quot;Good lunch - thanks. Heard from White House - assuming President Z convinces Trump he will investigate / get to the bottom of what happened in 2016, we will nail down date for visit to Washington.&quot;</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="350" source="20191209-dg-hjc">
+			<ar:note>time: 2:04:01</ar:note>
+			<ar:assert>The day after <ar:eventref eventid="jul25call"/>, <ar:subref subid="djt"/> sought to ensure that <ar:subref subid="vz"/> got the message during <ar:eventref eventid="jul26kyiv-meetings"/>.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="360" source="20191209-dg-hjc">
+			<ar:note>time: 2:04:20</ar:note>
+			<ar:assert><ar:subref subid="vz"/> mentioned that <ar:subref subid="djt"/> had brought up some &quot;very sensitive issues.&quot;</ar:assert>
+		</ar:claim>
+
+		<ar:claim claimid="370" source="20191209-dg-hjc">
+			<ar:note>time: 2:04:19</ar:note>
+			<ar:assert>During <ar:eventref eventid="20191120-gs-hit"/>, <ar:subref subid="gs"/> testifies that he &quot;probably&quot; discussed the issue of investigations at <ar:eventref eventid="jul26-gs-ay"/>.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="380" source="20191209-dg-hjc">
+			<ar:note>time: 2:04:41</ar:note>
+			<ar:assert>At <ar:eventref eventid="jul26-gs-dh-lunch"/>, <ar:subref subid="gs"/> calls <ar:subref subid="djt"/> and is overheard by <ar:subref subid="d-holmes"/> and hears Trump ask if Zelensky will do the investigation.</ar:assert>
+			<ar:warrant>
+				<ar:dataref did="2050"/>
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="385" source="20191209-dg-hjc">
+			<ar:note>time: 2:05:32</ar:note>
+			<ar:assert>Following <ar:claimref claimid="380"/>, <ar:subref subid="gs"/> says <ar:subref subid="djt"/> doesn't give a shit about Ukraine and only cares about &quot;the big stuff&quot; that benefits the President himself like the Biden investigation <ar:subref subid="rg"/> was pushing.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="400" source="20191209-dg-hjc">
+			<ar:assert><ar:subref subid="djt"/> conditioned a <ar:subref subid="wh-meeting"/> with <ar:subref subid="vz"/> on a public announcement of the investigations into Burisma/Biden and Ukraine interference in the 2016 US Election.</ar:assert>
+			<ar:warrant>
+				<ar:dataref did="600"/>
+			</ar:warrant>
+			<ar:warrant>
+				<ar:desc><ar:subref subid="vz"/> viewed the White House visit as conditional on investigations</ar:desc>
+				<ar:dataref did="1300" />
+			</ar:warrant>
+			
+		</ar:claim>
+		
+		<ar:claim claimid="480" source="20191209-dg-hjc">	
+			<ar:note>time: 1:54:18</ar:note>
+			<ar:assert><ar:subref subid="djt"/> did not discuss matters of interest to the United States - such as Ukraine's efforts to root out corruption.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="500" source="20191209-dg-hjc">
+			<ar:assert><ar:subref subid="djt"/> conditioned the release of <ar:subref subid="ur-aid"/> on a public announcement of the investigations into Burisma/Biden and Ukraine interference in the 2016 US Election.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="505" source="20191209-dg-hjc">
+			<ar:note>time: 1:55:44</ar:note>
+			<ar:assert>Just a few weeks before the <ar:eventref eventid="jul25call"/> <ar:subref subid="djt"/> inexplicably placed a hold on <ar:subref subid="ur-aid"/> without providing any reason to his own cabinet members or National Security Officials.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="510" source="20191209-dg-hjc">
+			<ar:note>time 1:56:00</ar:note>
+			<ar:assert>The evidence the committees collected showed there was unanimous support for the <ar:subref subid="ur-aid"/> from every relevant agency.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="515" source="20191209-dg-hjc">
+			<ar:note>time: 1:56:15</ar:note>
+			<ar:assert>During <ar:eventref eventid="jul25call"/>, <ar:subref subid="djt"/> complains to <ar:subref subid="vz"/> that US support for Ukraine what not reciprocal. That somehow the Ukraine needed to give more to the US by which he meant investigations into <ar:subref subid="crowdstrike"/> and <ar:subref subid="hb"/> </ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="550" source="20191209-dg-hjc">
+			<ar:assert><ar:subref subid="ur-aid"/> was vital to Ukraine's ability to fend off Russian aggression.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="575">
+			<ar:assert>A <ar:subref subid="wh-meeting"/> for <ar:subref subid="vz"/> is critical to his ability to negotiate with and deter <ar:subref subid="vp"/>.</ar:assert>
+			<ar:warrant>
+				<ar:dataref did="2040" />
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="600" source="20191209-dg-hjc">
+			<ar:assert>When <ar:subref subid="djt"/>'s efforts were discovered, he released the <ar:subref subid="ur-aid"/>.</ar:assert>
+		</ar:claim>
+
+		<ar:claim claimid="610" >
+			<ar:assert>It required action by congress to extend spend the remain $39 million of the <ar:subref subid="ur-aid"/> due to missing deadlines prescribed by the <ar:subref subid="ica"/>.</ar:assert>
+		</ar:claim>
+
+		<ar:claim claimid="700" source="20191209-dg-hjc">
+			<ar:assert>
+				During the <ar:eventref eventid="jul25call"/>, <ar:subref subid="djt"/> asked for a personal favor from <ar:subref subid="vz"/>.
+			</ar:assert>
+			<ar:warrant>
+				<ar:desc>
+					Immediately following <ar:subref subid="vz"/>'s declaration of readiness to buy more Javelin missles,
+					<ar:subref subid="djt"/> replied with a request &quot;do us a favor, though&quot; for two items: an investigation into <ar:claimref claimid="40000"/> and <ar:subref subid="biden_inv"/>.
+				</ar:desc>
+				<ar:dataref did="1000"/>
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="710" source="20191209-dg-hjc">
+			<ar:note>time: 2:01:16</ar:note>
+			<ar:assert>
+				Despite the facts that both <ar:claimref claimid="30000"/> and <ar:claimref claimid="40000"/> were unfounded,
+				by the time of <ar:eventref eventid="jul25call"/>, <ar:subref subid="rg"/> had been publicly advocating for these two investigations
+				for months while also using back channels to press Ukrainian officials to initiate them in support of his client, <ar:subref subid="djt"/>.
+			</ar:assert>
+			<ar:warrant>
+				<ar:desc><ar:subref subid="rg"/> was acting as a representative of <ar:subref subid="djt"/></ar:desc>
+				<ar:dataref did="1100"/>
+			</ar:warrant>
+			<ar:warrant>
+				<ar:desc><ar:subref subid="rg"/> was working against US policy</ar:desc>
+				<ar:dataref did="1200"/>
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="715" source="20191209-dg-hjc">
+			<ar:note>time: 2:01:43</ar:note>
+			<ar:assert><ar:subref subid="rg"/> was working at cross purposes with the official policy channels with Ukraine even as he was working on behalf of <ar:subref subid="djt"/>.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="800" source="20191209-dg-hjc">
+			<ar:assert>
+				<ar:subref subid="djt"/> hoped an investigation into Biden would help his 2020 campaign.
+			</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="830" source="20191119-ltcvinman">
+			<ar:assert>
+				During the <ar:eventref eventid="jul25call"/>, <ar:subref subid="djt"/>'s request for a favor amounted to a demand due to power disparity between <ar:subref subid="djt"/> and <ar:subref subid="vz"/>.
+			</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="900" source="20191209-dg-hjc">
+			<ar:assert><ar:subref subid="djt"/> hoped the announcement of an investigation into <ar:subref subid="burisma"/> and <ar:subref subid="hb"/> would smear his political rival and help his 2020 campaign.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="910">
+			<ar:note></ar:note>
+			<ar:assert><ar:subref subid="djt"/> wanted only the announcement of an investigation with little regard for the actual investigation.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="1000" source="20191209-dg-hjc">
+			<ar:note>time: 1:47:12</ar:note>
+			<ar:assert><ar:claimref claimid="100"/> and <ar:claimref claimid="900"/> is a clear and present danger to our free and fair elections and to our national security.</ar:assert>
+		</ar:claim>
+
+
+		<!-- contemporaneous alarm of white house staff regarding jul 25th call -->
+
+		<ar:claim claimid="1100" source="20191209-dg-hjc">
+			<ar:note>time: 1:54:00</ar:note>
+			<ar:assert>Two witnesses who listened to the call immediately reporter their concerns to White House lawyers.</ar:assert>
+		</ar:claim>
+		
+		
+		<!-- Obstruction -->
+
+		<ar:claim claimid="5000" source="20191209-dg-hjc">
+			<ar:subref subid="ob" />
+			<ar:note>time: 1:51:00</ar:note>
+			<ar:assert>When faced with an official impeachment inquiry into his conduct, <ar:subref subid="djt"/> launched an unprecedented campaign of obstruction of congress.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="5100">
+			<ar:subref subid="ob" />
+			<ar:assert><ar:subref subid="djt"/> ordered all executive branch agencies to defy congressional subpoenas for documents and testimony.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="5110">
+			<ar:subref subid="ob" />
+			<ar:assert>As of <ar:eventref eventid="20191209-dg-hjc"/> the investigative committees have received no documents from the Trump Administration persuant to our subpoenas.</ar:assert>
+		</ar:claim>
+
+		<ar:claim claimid="5137">
+			<ar:subref subid="ob" />
+			<ar:assert><ar:subref subid="djt"/> and <ar:subref subid="wh"/> were aware of the illegality of their actions when they did it.</ar:assert>
+		</ar:claim>
+			
+
+		<!-- Russian Interference -->		
+		<ar:claim claimid="10000">
+			<ar:assert>Russia interefered in the <ar:eventref eventid="2016elec"/></ar:assert>
+			<ar:warrant>
+				<ar:dataref did="700" />
+			</ar:warrant>
+			<ar:warrant>
+				<ar:dataref did="720"/>
+			</ar:warrant>
+		</ar:claim>
+		
+			
+			
+		<!-- Fair Process -->	
+		<ar:claim claimid="20100" source="20191209-dg-hjc">
+			<ar:note>time: 1:49:34</ar:note>
+			<ar:assert>There were no substantive questions the minority was prevented from asking.</ar:assert>
+		</ar:claim>
+		
+		
+		<!-- Biden claim validity -->
+		<ar:claim claimid="30000">
+			<ar:assert><ar:subref subid="jb"/> fired <ar:subref subid="shokin"/> to shutdown the investigation into <ar:subref subid="burisma"/> and <ar:subref subid="hb"/>.</ar:assert>
+			<ar:refutation>
+				<ar:claimref claimid="30100"/>
+			</ar:refutation>
+			<ar:refutation>
+				<ar:claimref claimid="30200"/>
+			</ar:refutation>
+		</ar:claim>
+		
+		<ar:claim claimid="30010" source="20191209-dg-hjc">
+			<ar:assert>The allegations against <ar:subref subid="jb"/> are patently false.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="30100" source="20191209-dg-hjc">
+			<ar:note>time: 2:00:51</ar:note>
+			<ar:assert>Witnesses unanimously testified that there is no factual support for <ar:claimref claimid="30000"/>.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="30200" source="20191209-dg-hjc">
+			<ar:note>time: 2:01:00</ar:note>
+			<ar:assert>
+				Witnesses testified <ar:subref subid="jb"/> was acting as part of an international consensus
+			 	and official US policy to clean up the Prosecutor Generals office in Ukraine.
+			 </ar:assert>
+		</ar:claim>
+		
+		
+		
+		<!-- Validity of Ukrainian Interference -->
+		<ar:claim claimid="40000" >
+			<ar:subref subid="uei"/>
+			<ar:assert>Theory that Ukraine interfered in the <ar:eventref eventid="2016elec"/> to support Democratic nominee.</ar:assert>
+		</ar:claim>
+
+		<ar:claim claimid="40010" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:assert><ar:claimref claimid="40000"/> is entirely debunked.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="40100" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:assert><ar:claimref claimid="40000"/> is sourced and promoted by <ar:subref subid="vp"/>.</ar:assert>
+		</ar:claim>
+		
+		
+		<ar:claim claimid="40200" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>			
+			<ar:note>time: 1:57:51</ar:note>
+			<ar:assert>Not a single witness testified there was any factual support for <ar:claimref claimid="40000"/></ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="40300" source="20191209-dg-hjc">
+			<ar:subref subid="interfere2016"/>
+			<ar:subref subid="uei"/>
+			<ar:note>time: </ar:note>
+			<ar:assert>
+				A unanimous assessment of US Intelligence Community found that Russia alone for interference of the 2016 election.
+				<ar:question>Does the report really say that only Russia was to blame?</ar:question>
+			</ar:assert>
+			<ar:warrant>
+				<ar:desc>see <ar:question>what page/paragraph?</ar:question></ar:desc>
+				<ar:dataref did="700" />
+			</ar:warrant>
+			<ar:warrant>
+				<ar:desc><ar:question>does Mueller saying Russia interefered really say Ukraine did not?</ar:question></ar:desc>
+				<ar:dataref did="710"/>
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="40320" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:note>time: 1:58:23</ar:note>
+			<ar:assert><ar:subref subid="fiona"/> testified that The President was told by his own former senior advisors, including his Homeland Security Advisor
+			and his National Security Advisor that the alternative theory <ar:claimref claimid="40000"/> was false.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="40322" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:note>time: 1:58:23</ar:note>
+			<ar:assert><ar:subref subid="fiona"/> testified that although no one in the US Government
+			knew of any factual support for <ar:claimref claimid="40000"/>, it did have one significant supporter, <ar:subref subid="vp"/>.</ar:assert>
+			<ar:warrant>
+				<ar:dataref did="900"/>
+			</ar:warrant>
+		</ar:claim>
+		
+		<ar:claim claimid="40330" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:note>time: 1:59:12</ar:note>
+			<ar:assert>Russia is the main beneficiary of <ar:claimref claimid="40000"/>.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="40400" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:note>time: 1:59:37</ar:note>
+			<ar:assert>
+				In the face of clear evidence, not only from Intelligence Community experts, but from his own National Security team,
+				that Russia and not Ukraine interfered in the 2016 election for the benefit of <ar:subref subid="djt"/>,
+				<ar:subref subid="djt"/> still pressed the Ukrainian government to announce an investigation into this conspriacy theory.
+			</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="40405" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:note>time: 1:59:57</ar:note>
+			<ar:assert><ar:subref subid="djt"/> asked for <ar:claimref claimid="40400"/> to help his political standing.</ar:assert>
+		</ar:claim>
+		
+		<ar:claim claimid="40410" source="20191209-dg-hjc">
+			<ar:subref subid="uei"/>
+			<ar:note>time: 2:00:09</ar:note>
+			<ar:assert><ar:subref subid="djt"/> event sought to withhold an Oval Office meeting with <ar:subref subid="vz"/> until he fell in line with <ar:subref subid="vp"/>'s lies, the leader that had actually invaded Ukraine.</ar:assert>
+		</ar:claim>
+		
+		
+		<!--  National Security -->
+		<ar:claim claimid="50000" source="20191209-dg-hjc">
+			<ar:subref subid="natsec" />
+			<ar:note>time: 1:50:52</ar:note>
+			<ar:assert><ar:subref subid="djt"/>'s conduct sought to undermine our free and fair elections and posed an imminent threat to our national security.</ar:assert>
+		</ar:claim>
+		
+	</ar:claims>
+</ar:argument>
